@@ -1,5 +1,6 @@
-import Login from "./pages/Login";
+import { Login, Home } from "./pages";
 import { createGlobalStyle } from "styled-components";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const GlobalStyle = createGlobalStyle`
   *{
@@ -14,10 +15,13 @@ const GlobalStyle = createGlobalStyle`
 
 const App = () => {
   return (
-    <div>
+    <BrowserRouter>
       <GlobalStyle/>
-      <Login/>
-    </div>
+      <Routes>
+        <Route path="/login" element={<Login/>}></Route>
+        <Route path="/" element={<Home/>}></Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

@@ -49,7 +49,7 @@ export default Login;
 
 const LoginArea = styled.div`
     width: 100%;
-    height: 98vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
