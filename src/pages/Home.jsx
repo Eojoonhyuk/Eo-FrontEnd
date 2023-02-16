@@ -23,13 +23,13 @@ const HomeArea = styled.div`
 `;
 
 const HomeBox = styled.div`
-    width: calc(100% - 200px);
+    width: calc(85% - 2rem * 2);
     display: flex;
     margin: 1rem 2rem 0 2rem;
 `;
 
 const ContentsBox = styled.div`
-    width: 700px;
+    width: 80%;
     display: flex;
     justify-content: center;
 `;

@@ -42,7 +42,7 @@ const SideBar = () => {
 export default SideBar;
 
 const SideBarArea = styled.div`
-    width: 250px;
+    width: 15%;
     height: 100%;
     border-right: 1px solid #ced4da;
     padding: 2rem 1rem 2rem 1.5rem;

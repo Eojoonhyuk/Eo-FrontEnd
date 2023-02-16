@@ -23,10 +23,10 @@ const PostItem = () => {
         <PostItemArea>
             <PostHeader>
                 <HeaderContents>
-                    <PostUserImgBox>
-                        <UserImg/>
-                    </PostUserImgBox>
                     <PostInfo>
+                        <PostUserImgBox>
+                            <UserImg/>
+                        </PostUserImgBox>
                         <UserName>_hyuuk_</UserName>
                         <TimePoint>•</TimePoint>
                         <Time>6일</Time>
@@ -60,7 +60,7 @@ const PostItem = () => {
 export default PostItem;
 
 const PostItemArea = styled.div`
-    width: 500px;
+    width: 50%;
     height: 750px;
 `;
 
@@ -70,9 +70,16 @@ const PostHeader  = styled.div`
     align-items: center;
 `;
 
+
 const HeaderContents = styled.div`
     width: 100%;
     height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+`;
+
+const PostInfo = styled.div`
     display: flex;
     align-items: center;
 `;
@@ -93,9 +100,6 @@ const UserImg = styled(FaUserCircle)`
     color: #adb5bd;
 `;
 
-const PostInfo = styled.div`
-    width: 410px;
-`;
 
 const UserName = styled.span`
     font-weight: 600;
