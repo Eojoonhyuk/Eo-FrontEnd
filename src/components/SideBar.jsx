@@ -4,7 +4,7 @@ import { IoPaperPlaneOutline } from "react-icons/io5";
 import { FiPlusSquare } from "react-icons/fi";
 import { FaUserCircle } from "react-icons/fa";
 
-const Items = [
+const ITEMS = [
     { id: "1", icon: <AiFillHome />, content: "홈" },
     { id: "2", icon: <IoPaperPlaneOutline />, content: "메시지" },
     { id: "3", icon: <AiOutlineHeart />, content: "알림" },
@@ -20,7 +20,7 @@ const SideBar = () => {
                 <SideBarImg src="../../images/instagram_logo.svg.png" alt="SideBar-Logo"/>
             </TopBottomBox>
             <ItemArea>
-            {Items.map((item)=>(
+            {ITEMS.map((item)=>(
                 <ItemBox key={item.id}>
                     <ItemIconBox>{item.icon}</ItemIconBox>
                     <ItemContent>{item.content}</ItemContent>
@@ -68,7 +68,8 @@ const SideBarImg = styled.img`
 
 const ItemArea = styled.div`
     height: 85%;
-`
+`;
+
 
 const ItemBox = styled.div`
     display: flex;
@@ -85,13 +86,14 @@ const ItemBox = styled.div`
 
 const ItemIconBox = styled.div`
     font-size: 1.6rem;
-    margin-right: 1.2rem;
     :hover{
         transform: scale(1.1);
     }
+    margin-right: 1.2rem;
 `;
 
 
 const ItemContent = styled.div`
     padding-bottom: 0.3rem;
 `;
+
