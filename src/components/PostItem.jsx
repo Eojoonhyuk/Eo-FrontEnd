@@ -60,7 +60,7 @@ const PostItem = () => {
 export default PostItem;
 
 const PostItemArea = styled.div`
-    width: 50%;
+    width: 60%;
     height: 750px;
 `;
 

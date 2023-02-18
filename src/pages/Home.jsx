@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { SideBar, PostItem } from "../components"
+import { SideBar, PostItem, User } from "../components"
 
 const Home = () => {
     return (        
@@ -9,6 +9,7 @@ const Home = () => {
                 <ContentsBox>
                     <PostItem/>
                 </ContentsBox>
+                <User/>
             </HomeBox>
         </HomeArea>
     )
@@ -23,13 +24,13 @@ const HomeArea = styled.div`
 `;
 
 const HomeBox = styled.div`
-    width: calc(85% - 2rem * 2);
+    width: calc(85% - 4rem);
     display: flex;
     margin: 1rem 2rem 0 2rem;
 `;
 
 const ContentsBox = styled.div`
-    width: 80%;
+    width: 70%;
     display: flex;
     justify-content: center;
 `;
