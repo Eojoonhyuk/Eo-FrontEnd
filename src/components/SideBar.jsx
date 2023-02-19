@@ -3,6 +3,7 @@ import { AiFillHome, AiOutlineHeart, AiOutlineMenu } from "react-icons/ai";
 import { IoPaperPlaneOutline } from "react-icons/io5";
 import { FiPlusSquare } from "react-icons/fi";
 import { FaUserCircle } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const ITEMS = [
     { id: "1", icon: <AiFillHome />, content: "홈" },
@@ -14,6 +15,7 @@ const ITEMS = [
 
 
 const SideBar = () => {
+    const navigate = useNavigate();
     return (
         <SideBarArea>
             <TopBottomBox>

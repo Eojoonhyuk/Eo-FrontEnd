@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FaUserCircle } from "react-icons/fa";
-
+import { IoPaperPlaneOutline } from "react-icons/io5";
 const User = () => {
     return (
         <UserArea>
@@ -11,7 +11,7 @@ const User = () => {
                     </PostUserImgBox>
                     <UserName>_hyuuk_</UserName>
                 </PostInfo>
-                <UserButton type="button">로그아웃</UserButton>
+                {/* <UserButton type="button">로그아웃</UserButton> */}
             </UserBox>
         </UserArea>
     )
