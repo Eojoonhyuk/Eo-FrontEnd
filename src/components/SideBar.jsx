@@ -6,16 +6,23 @@ import { FaUserCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
 const ITEMS = [
-    { id: "1", icon: <AiFillHome />, content: "홈" },
-    { id: "2", icon: <IoPaperPlaneOutline />, content: "메시지" },
-    { id: "3", icon: <AiOutlineHeart />, content: "알림" },
-    { id: "4", icon: <FiPlusSquare />, content: "만들기" },
-    { id: "5", icon: <FaUserCircle />, content: "프로필" },
+    { id: 1, icon: <AiFillHome />, content: "홈" },
+    { id: 2, icon: <IoPaperPlaneOutline />, content: "메시지" },
+    { id: 3, icon: <AiOutlineHeart />, content: "알림" },
+    { id: 4, icon: <FiPlusSquare />, content: "만들기" },
+    { id: 5, icon: <FaUserCircle />, content: "프로필" },
 ]
 
 
 const SideBar = () => {
     const navigate = useNavigate();
+    const handleClick = (id) => {
+        if(id === 1){
+            navigate("/")
+        }else if(id === 2){
+            navigate("/direct")
+        }
+    }; 
     return (
         <SideBarArea>
             <TopBottomBox>
@@ -23,7 +30,7 @@ const SideBar = () => {
             </TopBottomBox>
             <ItemArea>
             {ITEMS.map((item)=>(
-                <ItemBox key={item.id}>
+                <ItemBox key={item.id} onClick={() => {handleClick(item.id)}}>
                     <ItemIconBox>{item.icon}</ItemIconBox>
                     <ItemContent>{item.content}</ItemContent>
                 </ItemBox>

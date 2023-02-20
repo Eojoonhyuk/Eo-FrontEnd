@@ -15,7 +15,6 @@ const BOTTOM_ICONS = [
 
 const PostItem = () => {
     const [comment, setComment] = useState("");
-    console.log(comment)
     const handleOnChange = (e) => {
         setComment(e.target.value);
     }
