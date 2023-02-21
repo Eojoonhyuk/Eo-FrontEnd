@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { FaUserCircle } from "react-icons/fa";
-import { IoPaperPlaneOutline } from "react-icons/io5";
+
 const User = () => {
     return (
         <UserArea>

@@ -4,6 +4,7 @@ import { IoPaperPlaneOutline } from "react-icons/io5";
 import { FiPlusSquare } from "react-icons/fi";
 import { FaUserCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import instagram_logo from "../assets/image/instagram_logo.png";
 
 const ITEMS = [
     { id: 1, icon: <AiFillHome />, content: "홈" },
@@ -12,7 +13,6 @@ const ITEMS = [
     { id: 4, icon: <FiPlusSquare />, content: "만들기" },
     { id: 5, icon: <FaUserCircle />, content: "프로필" },
 ]
-
 
 const SideBar = () => {
     const navigate = useNavigate();
@@ -26,7 +26,7 @@ const SideBar = () => {
     return (
         <SideBarArea>
             <TopBottomBox>
-                <SideBarImg src="../../images/instagram_logo.svg.png" alt="SideBar-Logo"/>
+                <SideBarImg src={instagram_logo} alt="SideBar-Logo"/>
             </TopBottomBox>
             <ItemArea>
             {ITEMS.map((item)=>(
