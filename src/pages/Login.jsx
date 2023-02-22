@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { SiKakaotalk } from "react-icons/si"
 import { FcGoogle } from "react-icons/fc"
-
+import instagram_logo from "../assets/image/instagram_logo.png";
 const Login = () => {
     return(
         <LoginArea>
             <LoginContents>
                 <LoginBox>
-                    <Logo src="../../images/instagram_logo.svg.png" alt="instagram-logo"/>
+                    <Logo src={instagram_logo} alt="instagram-logo"/>
                     <LoginForm>
                         <InputBox>
                             <IdPasswordInput type="text" placeholder="전화번호, 사용자 이름 또는 이메일"/>
